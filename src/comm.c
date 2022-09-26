@@ -182,7 +182,7 @@ int	socket		args( ( int domain, int type, int protocol ) );
 
 #if	defined( __linux__ )
 int	close		args( ( int fd ) );
-int	gettimeofday	args( ( struct timeval *tp, struct timezone *tzp ) );
+//int	gettimeofday	args( ( struct timeval *tp, struct timezone *tzp ) ); // prool
 #if     defined( LINUX2 )
 int     accept          args( ( int s, const struct sockaddr *addr,
 			    int *addrlen ) );
