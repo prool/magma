@@ -1430,9 +1430,11 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
 
     if ( get_eq_char( ch, iWear ) )
     {
+#if 0 // prool
         sprintf( buf, "Equip_char: %s already equipped at %d.",
 		ch->name, iWear );
 	    warning( buf, 0 );
+#endif
 	    return;
     }
 

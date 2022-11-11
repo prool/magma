@@ -1537,7 +1537,7 @@ void char_update( void )
 	        continue;
 	    if ( ch == ch_save )
             {
-                send_to_char( "Autosaving...\n\r", ch );
+                //send_to_char( "Autosaving...\n\r", ch ); // prool
 		save_char_obj( ch );
             }
 	    if ( ch == ch_quit )

@@ -1204,12 +1204,13 @@ void load_area_file( )
 
     if ( area_last )
     {
-
+#if 0 // prool
 	fprintf( stderr, "%-14s: Rooms: %5d - %-5d Objs: %5d - %-5d Mobs: %5d - %d\n",
 		area_last->filename,
 		area_last->low_r_vnum, area_last->hi_r_vnum,
 		area_last->low_o_vnum, area_last->hi_o_vnum,
 		area_last->low_m_vnum, area_last->hi_m_vnum );
+#endif
     }
     else
     {
@@ -2189,9 +2190,10 @@ void load_magma_objects( FILE *fp )
          *
          * Not bothering to check - Veygoth
 	 */
+#if 1 // prool
         if( pObjIndex->item_type == TYPE_WEAPON && pObjIndex->value[3] == 0 )
             bug( "Object vnum %d: object type weapon with no damage type specified", vnum );
-	    
+#endif    
 	for ( ; ; )
 	{
 	    char letter;
@@ -2427,8 +2429,10 @@ void load_envy_objects( FILE *fp )
          *
          * Not bothering to check - Veygoth
 	 */
+#if 0 // prool
         if( pObjIndex->item_type == TYPE_WEAPON && pObjIndex->value[3] == 0 )
             warning( "Object vnum %d: object type weapon with no damage type specified", vnum );
+#endif
 	    
 	for ( ; ; )
 	{
@@ -5965,10 +5969,12 @@ ROOM_INDEX_DATA *get_room_index( int vnum )
 	    return pRoomIndex;
     }
 
+#if 0 // prool
     if ( fBootDb )
     {
 	bug( "Get_room_index: bad vnum %d.", vnum );
     }
+#endif
 
     return NULL;
 }

@@ -92,9 +92,10 @@ bool fread_class( char *filename )
     bool                fMatch;
     int                 stat;
     int                 number = -1;
-
+#if 0 // prool
     sprintf( buf, "Loading class: %s", filename );
     log_string( buf );
+#endif
 
     sprintf( buf, "%s%s%s", data_directory, CLASS_DIR, filename );
     if ( !( fp = fopen( buf, "r" ) ) )

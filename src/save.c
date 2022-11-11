@@ -179,9 +179,10 @@ void save_char_obj( CHAR_DATA *ch )
 
     ch->save_time = current_time;
     fclose( fpReserve );
-
+#if 0 // prool
     sprintf( buf, "Saving character: %s", ch->name );
     log_string( buf );
+#endif
 
     /* player files parsed directories by Yaz 4th Realm */
 #if !defined( macintosh ) && !defined( WIN32 )
