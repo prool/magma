@@ -91,6 +91,8 @@ void event_update( )
     int count;
     char buf[MAX_STRING_LENGTH];
 
+//printf("prool debug: event_update() \n"); // prool
+
     last_fun( "event_update");
 
     // Handle all the events
@@ -443,6 +445,7 @@ void event_update( )
                break;
             case EVENT_AREA_UPDATE:
                wiznet( NULL, WIZ_TICKS, L_APP, "Area update event" );
+               //printf(" prool debug: Area update event\n" ); // prool
                area_update	( );
                event->time = PULSE_AREA;
                break;

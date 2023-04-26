@@ -17,12 +17,12 @@ Currhome    0
 Lastrent    200
 NewHp       1
 LostHP      0
-Playd       469
+Playd       26492
 Created     1195846358
 Note        934557532
-Saved       1198353519
+Saved       1682538106
 Room        200
-HitMnMv      988 999 50 50 150 150
+HitMnMv      739 999 50 50 150 150
 Copper      0
 Silver      0
 Gold        0
@@ -47,11 +47,11 @@ Spkng       6
 Height      77
 Weight      155
 Deaf        0
-Paswd       password~
+Paswd       paroll~
 Bmfin       ~
 Bmfout      ~
 Immskll     at wiz wizhelp killproc chill title history ptell random brew quit finger fog reset alist allow siteban bitflag crashmud deny disconnect lookup force freeze find imtlset language load log loopmud map noemote note numlock pardon purge reboot rename namesucks restore setbit shutdown silence slay sset sstime stat statdump terminate transfer users where wizify wizlock makeclan killclan echo memory peace recho return sober snoop switch wizinvis bamfin bamfout goto holylight wiznet clone zreset prgstat ~
-Wiznet      0
+Wiznet      17
 Ttle         &n&n~
 AtrPrm      95 59 51 66 71
 ExtAtr      45 32 50 61
@@ -464,6 +464,50 @@ Timer        -1
 Affectby     0 0 0 0 0
 Cost         10
 Values       30 30 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         jerkin leather~
+ShortDescr   &+ya leather jerkin~
+Description  A vest made of leather rests here.~
+Vnum         100
+Material     13
+ExtraFlags   0
+ExtraFlags2  0
+WearFlags    9
+WearLoc      -1
+AntiFlags    1
+AntiFlags2   0
+ItemType     9
+Weight       6
+Level        64
+Timer        -1
+Affectby     0 0 0 0 0
+Cost         985
+Values       7 3 1 3 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         jerkin leather~
+ShortDescr   &+ya leather jerkin~
+Description  A vest made of leather rests here.~
+Vnum         100
+Material     13
+ExtraFlags   0
+ExtraFlags2  0
+WearFlags    9
+WearLoc      -1
+AntiFlags    1
+AntiFlags2   0
+ItemType     9
+Weight       6
+Level        64
+Timer        -1
+Affectby     0 0 0 0 0
+Cost         985
+Values       7 3 1 3 0 0 0 0
 End
 
 #END

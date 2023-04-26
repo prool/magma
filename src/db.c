@@ -5010,10 +5010,14 @@ void area_update( void )
     char       buf [ MAX_STRING_LENGTH ];
 //    int reset_age;
 
+//printf("prool debug: area_update()\n"); // prool
+
     last_fun( "area_update");
     for ( pArea = area_first; pArea; pArea = pArea->next )
     {
 	// CHAR_DATA *pch;
+
+    //printf("prool debug: %s\n", pArea->name ); // prool
 
         if( pArea->dispatched > 0 )
             pArea->dispatched--;
@@ -5022,13 +5026,18 @@ void area_update( void )
 
         // added check for resetmode and lifespan
         // - Lithos
+/* prool dirty hack for respawn monsters
         if ( pArea->resetmode == 0  && pArea->times_reset )
             continue;
+*/
+    //printf("prool debug: #2 %s\n", pArea->name ); // prool
         if ( pArea->resetmode == 1 && pArea->nplayer > 0 )
             continue;
+    //printf("prool debug: #3 %s\n", pArea->name ); // prool
         if ( pArea->age < number_range( pArea->llifespan, pArea->ulifespan ) 
             && pArea->times_reset )
             continue;
+    //printf("prool debug: #4 OK %s\n", pArea->name ); // prool
 
 	/*
 	 * Check for PC's.
@@ -5072,6 +5081,8 @@ void reset_area( AREA_DATA *pArea )
 {
     ROOM_INDEX_DATA *pRoom;
     int  vnum;
+
+//printf("prool debug: reset_area()\n"); // prool
 
     last_fun( "reset_area");
     pArea->squads = 0;

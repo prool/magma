@@ -461,7 +461,7 @@ void interpret( CHAR_DATA *ch, char *argument )
     int  trust;
     bool found;
 
-    printf("cmd = '%s'\n", argument); // prool: big brother mode for debuggin purpose
+    //printf("cmd = '%s'\n", argument); // prool: big brother mode for debuggin purpose
 
     last_fun( "interpret");
 /*
